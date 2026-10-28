@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Avatar Roi — tu opinión también construye ciudades</title>
+<meta name="description" content="Un asistente flotante que te acompaña mientras navegas y te deja opinar sobre webs y lugares físicos.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#26331f;--moss:#3f5a3a;--sage:#e9efdc;--paper:#fbf7ec;--sun:#f2d05c;--mut:#5b6a50}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 "Bricolage Grotesque",system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-weight:600}
+nav a{color:var(--ink);text-decoration:none}nav .cta{background:var(--moss);color:#fff;padding:9px 18px;border-radius:99px}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center;padding:48px 0 72px}
+h1{font-size:clamp(40px,7vw,76px);line-height:.98;letter-spacing:-.03em;font-weight:800;margin:0 0 20px}
+h1 span{display:block;color:var(--moss)}
+.lead{max-width:46ch;color:var(--mut);font-size:19px;margin:0 0 28px}
+.btn{display:inline-block;padding:14px 24px;border-radius:99px;background:var(--moss);color:#fff;text-decoration:none;font-weight:600}
+.btn.g{background:transparent;color:var(--ink);border:2px solid var(--ink);margin-left:8px}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.stage{position:relative;aspect-ratio:1;border-radius:36px;background:linear-gradient(170deg,#dfe9cf 0 55%,#c9d9b4 55%);overflow:hidden}
+.stage i{position:absolute;bottom:38%;background:#6f8a63;border-radius:6px 6px 0 0}
+.stage i:nth-child(1){left:8%;width:14%;height:44%}.stage i:nth-child(2){left:26%;width:11%;height:62%;background:#587350}
+.stage i:nth-child(3){left:41%;width:13%;height:36%}.stage i:nth-child(4){left:60%;width:12%;height:54%;background:#587350}.stage i:nth-child(5){left:76%;width:15%;height:30%}
+.stage svg{position:absolute;left:50%;bottom:-4%;width:78%;transform:translateX(-50%)}
+.stage p{position:absolute;left:18px;right:18px;top:18px;margin:0;background:#fff;padding:10px 14px;border-radius:16px;font-size:15px;box-shadow:0 8px 24px #26331f22}
+.modes{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--ink)}
+.modes div{padding:28px 24px 28px 0}.modes div+div{padding-left:24px;border-left:1px solid #cfd6c2}
+h2{font-size:22px;margin:0 0 6px;letter-spacing:-.01em}.modes p{margin:0;color:var(--mut)}
+.steps{margin:72px 0;background:var(--sage);border-radius:32px;padding:40px}
+.steps ol{margin:16px 0 0;padding-left:22px;max-width:62ch}.steps li{margin-bottom:8px}
+code{background:#fff;padding:2px 8px;border-radius:6px;font-size:.88em}
+.live{margin:0 0 72px;font-weight:600}.live b{display:inline-block;min-width:1.5ch;font-size:32px;color:var(--moss)}
+footer{padding:0 0 100px;color:var(--mut);font-size:14px}
+@media(max-width:760px){.hero,.modes{grid-template-columns:1fr}.modes div+div{border-left:0;border-top:1px solid #cfd6c2;padding-left:0}.steps{padding:26px}}
+</style></head><body>
+<div class="wrap">
+<nav><a href="#">Avatar Roi</a><a class="cta" href="#instalar">Instalar</a></nav>
+<header class="hero"><div>
+<h1>Valora.<span>Comparte.</span>Haz la diferencia.</h1>
+<p class="lead">Roi te acompaña mientras navegas, te pregunta cómo te sientes y convierte tu opinión en conocimiento para mejores ciudades. Funciona en cualquier web y también en la calle.</p>
+<a class="btn" href="#instalar">Instalar la extensión</a><a class="btn g" href="#" onclick="AvatarRoi.open();return false">Probar a Roi ahora</a>
+</div>
+<div class="stage" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><p>¡Hola! 👋 ¿Cómo te sientes con esta experiencia?</p>
+<svg viewBox="0 0 100 100"><path d="M12 100Q14 79 50 77Q86 79 88 100Z" fill="#2f4a6b"/><path d="M39 79L50 93L61 79Z" fill="#cfe2f3"/><rect x="43" y="66" width="14" height="14" fill="#d9a07a"/><ellipse cx="50" cy="47" rx="22" ry="26" fill="#e9b48e"/><path d="M26 46Q22 14 50 14Q80 14 74 46Q69 29 50 29Q33 29 26 46Z" fill="#2b1d16"/><ellipse cx="41" cy="48" rx="2.6" ry="3.2" fill="#2b1d16"/><ellipse cx="59" cy="48" rx="2.6" ry="3.2" fill="#2b1d16"/><path d="M39 61Q50 74 61 61" stroke="#8a3b2e" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg></div></header>
+<section class="modes">
+<div><h2>Valora cualquier web</h2><p>Un toque en la cara que te representa, una o varias emociones y, si quieres, un comentario.</p></div>
+<div><h2>Señala lo que importa</h2><p>Elige un botón, un texto o una imagen de la página y cuéntanos qué te pasa con él.</p></div>
+<div><h2>Opina sobre lugares reales</h2><p>Roi detecta dónde estás y guarda tu valoración con el nombre y las coordenadas del sitio.</p></div>
+</section>
+<section class="steps" id="instalar"><h2>Instalar en Chrome, Edge o Brave</h2>
+<ol><li>Descarga el repositorio y descomprímelo.</li><li>Abre <code>chrome://extensions</code> y activa el modo desarrollador.</li><li>Pulsa «Cargar descomprimida» y elige la carpeta <code>extension</code>.</li><li>Abre cualquier web: Roi aparece abajo a la derecha. Arrástralo donde quieras.</li></ol></section>
+<p class="live"><b id="c">0</b> valoraciones enviadas desde esta demo en tu navegador.</p>
+<footer>Avatar Roi · Juntos construimos mejores ciudades.</footer>
+</div>
+<script src="avatar.js" data-open="1"></script>
+<script>
+const c=document.getElementById('c');let n=0;try{n=(JSON.parse(localStorage.getItem('roi_ratings')||'[]')).length}catch(e){}c.textContent=n;
+addEventListener('roi:rated',()=>c.textContent=++n);
+</script></body></html>

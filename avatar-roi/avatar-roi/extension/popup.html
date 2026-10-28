@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><title>Avatar Roi</title>
+<style>
+body{width:320px;margin:0;padding:16px;font:14px/1.4 system-ui,sans-serif;background:#fbf7ec;color:#26331f}
+h1{font-size:17px;margin:0 0 2px}p{margin:0 0 12px;color:#5b6a50;font-size:13px}
+.state{display:flex;gap:10px;align-items:center;background:#fff;border-radius:14px;padding:10px 12px;margin-bottom:12px}.state span{font-size:28px}
+label.t{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+ul{list-style:none;margin:0 0 12px;padding:0;max-height:170px;overflow:auto}li{display:flex;gap:8px;padding:6px 0;border-bottom:1px solid #e6e2d3;font-size:12.5px}li b{flex:none}li i{font-style:normal;color:#6c7a60;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+button{padding:8px 12px;border:0;border-radius:10px;background:#3f5a3a;color:#fff;font:inherit;cursor:pointer}button.g{background:#e9efdc;color:#26331f}
+input{width:100%;padding:7px 9px;border:1px solid #cfd6c2;border-radius:8px;font:inherit;margin:4px 0 12px}
+button:focus-visible,input:focus-visible{outline:3px solid #3f5a3a;outline-offset:2px}
+</style>
+<h1>Avatar Roi</h1><p>Tu opinión también construye ciudades.</p>
+<div class="state"><span id="e">🙂</span><div><b id="s">Sin valoraciones aún</b><br><small id="n"></small></div></div>
+<label class="t">Mostrar avatar en las webs <input type="checkbox" id="show" checked style="width:auto;margin:0"></label>
+<b>Últimas valoraciones</b><ul id="l"></ul>
+<div style="display:flex;gap:8px;margin-bottom:12px"><button id="csv">Exportar CSV</button><button class="g" id="json">JSON</button></div>
+<label for="ep"><b>Enviar valoraciones a (opcional)</b></label><input id="ep" placeholder="https://tu-api.vercel.app/api/ratings">
+<script src="popup.js"></script>
